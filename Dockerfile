@@ -42,8 +42,3 @@ COPY setup.sh ${SETUP_FILE}
 EXPOSE 22
 
 CMD ${SETUP_FILE}
-
-
-FROM standard AS docker
-
-RUN set -ex; apk add --no-cache docker-cli=20.10.14-r1
